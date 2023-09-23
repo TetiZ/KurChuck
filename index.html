@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>KurChuck</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./src/fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <!-- Навігація -->
+      <div class="navbar container">
+        <nav class="nav-menu">
+          <svg class="logo-icon" width="32" height="32" aria-label="rooster">
+            <use href="./images/icons.svg#icon-rooster"></use>
+          </svg>
+          <a href="./index.html" class="logo-header link">KurChuck</a>
+          <ul class="list menu-list">
+            <li class="menu-list-item">
+              <a class="navigation link" href="./index.html">Home</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="navigation link" href="">Asortyment</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="navigation link" href="">Znajdź nas</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="sm-list list">
+          <li class="sm-list-item">
+            <a class="sm-link" href="https://www.tiktok.com/@kur.chuck">
+              <svg
+                class="sm-icon"
+                width="30"
+                height="30"
+                aria-label="tiktok icon"
+              >
+                <use href="./images/icons.svg#icon-tiktok" />
+              </svg>
+            </a>
+          </li>
+          <li class="sm-list-item">
+            <a
+              class="sm-link"
+              href="https://www.facebook.com/kurchuck.foodtruck"
+            >
+              <svg
+                class="sm-icon"
+                width="30"
+                height="30"
+                aria-label="facebook icon"
+              >
+                <use href="./images/icons.svg#icon-facebook" />
+              </svg>
+            </a>
+          </li>
+          <li class="sm-list-item">
+            <a class="sm-link" href="https://www.instagram.com/kur.chuck/">
+              <svg
+                class="sm-icon"
+                width="30"
+                height="30"
+                aria-label="instagram icon"
+              >
+                <use href="./images/icons.svg#icon-instagram" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Основний вміст сторінки -->
+    <main>
+      <!-- HERO SECTION -->
+
+      <section class="title-section section">
+        <img
+          class="hero-img"
+          src="/images/boxes/hero_box.png"
+          width="400"
+          height="313"
+          alt="strips box image"
+        />
+
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1 class="page-title">Wiemy, na co masz ochotę</h1>
+            <p class="page-subtitle">
+              Jestesmy <span class="hero-accent">KurChuck</span>! Nakarmimy Cię
+              szybko i soczysto. Zawsze słuchamy i słyszymy naszych gości. Tak,
+              tak, KAŻDY, kto pewnego dnia trafił do nas i skosztował naszego
+              <span class="hero-accent">wrapa</span> staje się na zawsze naszym
+              stalym i ulubionym gościem.
+            </p>
+            <button type="button" class="hero-btn">
+              <svg class="hero-btn-icon" width="44" height="44">
+                <use href="/images/icons.svg#icon-location-pin"></use></svg
+              >Znajdź nas
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+
+      <section class="section">
+        <div class="container">
+          <h2 class="section-title">Our Portfolio</h2>
+
+          <ul class="portfolio-list list">
+            <li class="portfolio-list-item">
+              <div class="portfolio-img">
+                <img
+                  srcset="
+                    ./images/portfolio/banking.jpg           360w,
+                    ./images/portfolio/banking@2x.jpg        720w,
+                    ./images/portfolio/banking-tablet.jpg    356w,
+                    ./images/portfolio/banking-tablet@2x.jpg 712w,
+                    ./images/portfolio/banking-mob.jpg       288w,
+                    ./images/portfolio/banking-mob@2x.jpg    576w
+                  "
+                  src="./images/portfolio/banking.jpg"
+                  sizes="
+                  (min-width: 1158px) 360px,
+                  (min-width: 768px) 356px,
+                  (min-width: 320px) 418px"
+                  alt="banking app"
+                />
+                <p class="overlay-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+
+              <div class="portfolio-items-info">
+                <h3 class="portfolio-elements-title">Banking App</h3>
+                <p class="portfolio-elements-text">App</p>
+              </div>
+            </li>
+            <li class="portfolio-list-item">
+              <div class="portfolio-img">
+                <img
+                  src="./images/portfolio/cashless.jpg"
+                  alt="cashless payment"
+                />
+                <p class="overlay-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+
+              <div class="portfolio-items-info">
+                <h3 class="portfolio-elements-title">Cashless Payment</h3>
+                <p class="portfolio-elements-text">Marketing</p>
+              </div>
+            </li>
+
+            <li class="portfolio-list-item">
+              <div class="portfolio-img">
+                <img
+                  src="./images/portfolio/meditation.jpg"
+                  alt="meditation app"
+                />
+                <p class="overlay-text">
+                  14 Stylish and User-Friendly App Design Concepts · Task
+                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+                  · Cloud Storage App
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="custom-footer"></footer>
+
+    <!-- ##### Modal window - mobile menu ##### -->
+    <div class="mobile-menu">
+      <button class="modal-close-btn" type="button">
+        <svg class="icon-close" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-list list">
+          <li class="mobile-menu-list-item">
+            <a href="" class="section-title link active-mob-menu-link"
+              >studio</a
+            >
+          </li>
+          <li class="mobile-menu-list-item">
+            <a href="" class="section-title link">portfolio</a>
+          </li>
+          <li class="mobile-menu-list-item">
+            <a href="" class="section-title link">contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu-mob-contacts">
+        <address class="address-links">
+          <ul class="list address-mob-list">
+            <li class="address-mob-list-item">
+              <a
+                class="contact-links-mob link active-mob-menu-link"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11
+              </a>
+            </li>
+            <li class="address-mob-list-item">
+              <a class="contact-links-mob link" href="mailto:info@devstudio.com"
+                >info@devstudio.com
+              </a>
+            </li>
+          </ul>
+        </address>
+
+        <ul class="sm-list list">
+          <li class="sm-list-item">
+            <a href="" class="sm-team-link sm-link link">
+              <svg class="sm-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sm-list-item">
+            <a href="" class="sm-team-link sm-link link">
+              <svg class="sm-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sm-list-item">
+            <a href="" class="sm-team-link sm-link link">
+              <svg class="sm-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="sm-list-item">
+            <a href="" class="sm-team-link sm-link link">
+              <svg class="sm-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

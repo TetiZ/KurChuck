@@ -1,0 +1,122 @@
+:root {
+  --primary-text-color: #f3f3f3;
+  --background-color: #100f0f;
+  --accent-color: #f1b043;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+body {
+  font-weight: 400;
+  font-family: "oktaneue-blackitalic", sans-serif;
+  font-size: 16px;
+  color: var(--primary-text-color);
+  background-color: #fff;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.logo-header {
+  color: whitesmoke;
+  font-family: "Windsor", serif;
+  font-size: 24px;
+  line-height: 1.17;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  /* Box model */
+  margin-right: 76px;
+}
+
+.logo-icon {
+  fill: white;
+}
+
+/* MAIN */
+.btn {
+  /* Typography */
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  /* Visual */
+  background-color: var(--primary-el-color);
+  border-radius: 4px;
+
+  /* Transition */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-lable {
+  /* Typography */
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17em;
+  letter-spacing: 0.04em;
+
+  /* Visual */
+  color: var(--lightslate);
+}
+
+/* OUR TEAM */
+
+.sm-link {
+  /* Box model */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  /* Transition */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Visual */
+  border-radius: 50%;
+}

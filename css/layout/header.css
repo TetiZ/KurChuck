@@ -1,0 +1,40 @@
+.page-header {
+  background-color: #100f0f;
+}
+
+.navigation {
+  color: whitesmoke;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.nav-menu {
+  display: flex;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.menu-list {
+  display: flex;
+  gap: 40px;
+  width: clac((100% -80px) 3);
+}
+
+.sm-list {
+  display: flex;
+  gap: 10px;
+  width: calc((100% - 20px) 3);
+  margin-left: auto;
+}
+
+.sm-icon {
+  stroke: whitesmoke;
+}
+
+.sm-icon:hover,
+.sm-icon:focus,
+.sm-icon:active {
+}

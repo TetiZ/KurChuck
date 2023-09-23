@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Windsor";
+  src: url("Windsor-Bold.woff2") format("woff2"),
+    url("Windsor-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "oktaneue-blackitalic";
+  src: url("oktaneue-blackitalic-webfont.woff2") format("woff2"),
+    url("oktaneue-blackitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
