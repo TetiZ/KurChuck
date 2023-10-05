@@ -30,6 +30,24 @@ body {
   background-color: #fff;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  background-color: #1c1c1c;
+}
+
+.header-hero-bg {
+  width: 1440px;
+  height: 790px;
+  position: absolute;
+  z-index: -2;
+  background-image: linear-gradient(
+      180deg,
+      rgba(26, 26, 26, 0) 0%,
+      #1a1a1a 100%
+    ),
+    linear-gradient(0deg, rgba(33, 33, 33, 0.5) 0%, rgba(33, 33, 33, 0.5) 100%),
+    url(/images/boxes/hero-box-img.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 img {
@@ -97,7 +115,7 @@ textarea {
   /* Typography */
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17em;
+  line-height: 1.17;
   letter-spacing: 0.04em;
 
   /* Visual */

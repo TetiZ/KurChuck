@@ -1,0 +1,50 @@
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.menu-list-item {
+  width: calc((100% - 60px) / 3);
+}
+
+.menu-list-img {
+  border-radius: 6px;
+  margin-bottom: 28px;
+}
+
+.menu-list-title {
+  /* Box model */
+  margin-bottom: 20px;
+  /* Typography */
+  font-family: "Windsor", serif;
+  color: #d9d9d9;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 0.93;
+  text-align: center;
+}
+
+.menu-list-text {
+  /* Box model */
+  width: 290px;
+  height: 60px;
+  margin-bottom: 8px;
+
+  /* Typography */
+  color: #85878c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+}
+
+.menu-price {
+  color: #85878c;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.38;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}

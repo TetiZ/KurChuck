@@ -1,5 +1,11 @@
 .page-header {
-  background-color: #100f0f;
+  background-color: rgba(28, 28, 28, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+  padding: 0 175px;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
 }
 
 .navigation {
@@ -7,20 +13,30 @@
   font-weight: 600;
 }
 
+.navigation:hover,
+.navigation:focus,
+.navigation:active {
+  color: #f1b043;
+}
+
 .navbar {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .nav-menu {
   display: flex;
   padding-top: 28px;
   padding-bottom: 28px;
+  align-items: center;
 }
 
-.menu-list {
+.nav-menu-list {
   display: flex;
   gap: 40px;
-  width: clac((100% -80px) 3);
+}
+
+.nav-menu-list-item {
+  width: calc((100% -80px) 3);
 }
 
 .sm-list {
@@ -32,9 +48,11 @@
 
 .sm-icon {
   stroke: whitesmoke;
+  fill: none;
 }
 
 .sm-icon:hover,
 .sm-icon:focus,
 .sm-icon:active {
+  stroke: #f1b043;
 }

@@ -18,6 +18,7 @@
   </head>
 
   <body>
+    <div class="header-hero-bg"></div>
     <header class="page-header">
       <!-- Навігація -->
       <div class="navbar container">
@@ -26,14 +27,14 @@
             <use href="./images/icons.svg#icon-rooster"></use>
           </svg>
           <a href="./index.html" class="logo-header link">KurChuck</a>
-          <ul class="list menu-list">
-            <li class="menu-list-item">
+          <ul class="list nav-menu-list">
+            <li class="nav-menu-list-item">
               <a class="navigation link" href="./index.html">Home</a>
             </li>
-            <li class="menu-list-item">
+            <li class="nav-menu-list-item">
               <a class="navigation link" href="">Asortyment</a>
             </li>
-            <li class="menu-list-item">
+            <li class="nav-menu-list-item">
               <a class="navigation link" href="">Znajdź nas</a>
             </li>
           </ul>
@@ -43,8 +44,8 @@
             <a class="sm-link" href="https://www.tiktok.com/@kur.chuck">
               <svg
                 class="sm-icon"
-                width="30"
-                height="30"
+                width="28"
+                height="28"
                 aria-label="tiktok icon"
               >
                 <use href="./images/icons.svg#icon-tiktok" />
@@ -58,8 +59,8 @@
             >
               <svg
                 class="sm-icon"
-                width="30"
-                height="30"
+                width="28"
+                height="28"
                 aria-label="facebook icon"
               >
                 <use href="./images/icons.svg#icon-facebook" />
@@ -70,8 +71,8 @@
             <a class="sm-link" href="https://www.instagram.com/kur.chuck/">
               <svg
                 class="sm-icon"
-                width="30"
-                height="30"
+                width="28"
+                height="28"
                 aria-label="instagram icon"
               >
                 <use href="./images/icons.svg#icon-instagram" />
@@ -86,40 +87,117 @@
     <main>
       <!-- HERO SECTION -->
 
-      <section class="title-section section">
-        <img
-          class="hero-img"
-          src="/images/boxes/hero_box.png"
-          width="400"
-          height="313"
-          alt="strips box image"
-        />
-
+      <section class="hero-section">
         <div class="container hero-container">
-          <div class="hero-content">
-            <h1 class="page-title">Wiemy, na co masz ochotę</h1>
-            <p class="page-subtitle">
-              Jestesmy <span class="hero-accent">KurChuck</span>! Nakarmimy Cię
-              szybko i soczysto. Zawsze słuchamy i słyszymy naszych gości. Tak,
-              tak, KAŻDY, kto pewnego dnia trafił do nas i skosztował naszego
-              <span class="hero-accent">wrapa</span> staje się na zawsze naszym
-              stalym i ulubionym gościem.
-            </p>
-            <button type="button" class="hero-btn">
-              <svg class="hero-btn-icon" width="44" height="44">
-                <use href="/images/icons.svg#icon-location-pin"></use></svg
-              >Znajdź nas
-            </button>
-          </div>
+          <h1 class="page-title">
+            Twój ulubiony <span class="hero-accent">kurChuck</span> w naszych
+            wypasionych wrapach
+          </h1>
+          <p class="page-subtitle">
+            Stworzymy dla Ciebie soczystego wrapa z najświeższych wybornych
+            składników - dobierz z których:
+          </p>
+          <button type="button" class="hero-btn">
+            <svg class="hero-btn-icon" width="44" height="44">
+              <use href="/images/icons.svg#icon-location-pin"></use></svg
+            >Znajdź nas
+          </button>
         </div>
       </section>
 
-      <!-- PORTFOLIO -->
+      <!-- ABOUT -->
 
-      <section class="section">
-        <div class="container">
-          <h2 class="section-title">Our Portfolio</h2>
+      <section class="about-section section">
+        <div class="about-container container">
+          <h3 class="bg-title">O nas</h3>
 
+          <div class="container-title-wrapper">
+            <h2 class="section-title">Poznaj naszą knajpę na kółkach</h2>
+            <p class="section-text">
+              Zobacz historię naszego foodtrucka i poznaj filozofię naszej
+              mobilnej knajpy. Podzielimy się pasją do przygotowywania
+              wyjątkowych dań na kołach.
+            </p>
+          </div>
+          <div class="about-gallery-wrapper">
+            <img
+              class="about-img"
+              src="./images/warsaw-truck.jpg"
+              alt="foodtruck photo at Warsow fantasy fair"
+            />
+            <video class="about-video" volume="0.1" controls>
+              <source src="./videos/about.mp4" type="video/mp4" />
+            </video>
+            <img
+              class="about-img"
+              src="./images/lwowek-truck.jpg"
+              alt="foodtruck team photo"
+            />
+          </div>
+          </section>
+<!-- MENU -->
+          <section class="menu-section section">
+            <div class="menu-container container">
+              <div class="container-title-wrapper">
+                <h3 class="bg-title">Menu</h3>
+                <h2 class="section-title">Odkryj bogactwo naszych smaków</h2>
+                <p class="section-text">Wprowadź się w fascynującą podróż przez różnorodność smaków, tekstur i aromatów. Połącz przyjemność jedzenia z nowymi smakowymi doznaniami, odkrywając nasze menu wrapów jako prawdziwą ucztę dla podniebienia.</p>
+              </div>
+            
+              <ul class="menu-list list">
+              <li class="menu-list-item">
+                <img class="menu-list-img" src="./images/wraps/wrap_nachos.jpg" width="350" 
+                alt="nachos wrap photo">
+                </img>
+                <h4 class="menu-list-title">Nachos</h4>
+                  <p class="menu-list-text">Stripsy • nachos • pomidor • ogórek • jalapeno • sos</p>
+             <p class="menu-price">26 pln</p>
+                </li>
+              <li class="menu-list-item">
+                <img class="menu-list-img" src="./images/wraps/wrap_wyspiarz.jpg" width="350" 
+                alt="wyspiarz wrap photo">
+                </img>
+                <h4 class="menu-list-title">Wyspiarz</h4>
+                  <p class="menu-list-text">Stripsy • ser feta • ogórek • suszone pomidory • sałata • oliwki zielone i czarne • sos ziołowy</p>
+                  <p class="menu-price">32 pln</p>
+              </li>
+              <li class="menu-list-item">
+                <img class="menu-list-img" src="./images/wraps/wraps_frytol.jpg" width="350" 
+                alt="frytol wrap photo">
+                </img>
+                <h4 class="menu-list-title">Frytol</h4>
+                  <p class="menu-list-text">Stripsy • frytki • ogórek • pomidor • ketchup</p>
+                  <p class="menu-price">30 pln</p>
+              </li>
+              <li class="menu-list-item">
+                <img class="menu-list-img" src="./images/wraps/wraps_klasyk.jpg" width="350" 
+                alt="klasyk wrap photo">
+                </img>
+                <h4 class="menu-list-title">Klasyk</h4>
+                  <p class="menu-list-text">Stripsy • sałata • pomidor • ogórek • sos czosnkowy</p>
+                  <p class="menu-price">28 pln</p>
+              </li>
+              <li class="menu-list-item">
+                <img class="menu-list-img" src="./images/wraps/wraps_polak.jpg" width="350" 
+                alt="polak wrap photo">
+                </img>
+                <h4 class="menu-list-title">Polak</h4>
+                  <p class="menu-list-text">Stripsy • sałata • pomidor • ogórek kiszony • krążki cebulowe • sos czosnkowy</p>
+                  <p class="menu-price">32 pln</p>
+              </li>
+              <li class="menu-list-item">
+                <img class="menu-list-img" src="./images/wraps/wraps_serowy.jpg" width="350" 
+                alt="serowy wrap photo">
+                </img>
+                <h4 class="menu-list-title">Serowy</h4>
+                  <p class="menu-list-text">Stripsy • ser żółty • sos serowy • lazur • pomidor • ogórek • cheddar • sos ziołowy</p>
+                  <p class="menu-price">32 pln</p>
+              </li>
+            </ul>
+
+            </div>
+
+          </section>
           <ul class="portfolio-list list">
             <li class="portfolio-list-item">
               <div class="portfolio-img">
@@ -185,7 +263,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      
     </main>
 
     <!-- FOOTER -->
