@@ -30,6 +30,14 @@
   position: relative;
 }
 
+.location-container {
+  /* Box model */
+  padding: 105px 15px;
+
+  /* Positioning */
+  position: relative;
+}
+
 @media screen and (min-width: 320px) {
   .container {
   }

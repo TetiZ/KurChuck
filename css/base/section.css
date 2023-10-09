@@ -19,6 +19,10 @@
   align-items: center;
 }
 
+.location-section {
+  padding-top: 0;
+}
+
 @media screen and (min-width: 1158px) {
   .section {
   }

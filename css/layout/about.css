@@ -25,7 +25,8 @@
   /* Box model */
   position: absolute;
   top: 60px;
-  left: 335px;
+  left: 50%;
+  transform: translateX(-50%);
 
   /* Typography */
   font-family: "Windsor", serif;
