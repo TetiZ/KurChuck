@@ -43,6 +43,7 @@
 
 .location-descr {
   color: #b3b3b3;
+  font-weight: 600;
 }
 
 .maps-link {
@@ -77,7 +78,7 @@
 
 .map-location-link {
   position: absolute;
-  top: 55px;
+  top: 115px;
   left: 75px;
 
   /* Visual */
