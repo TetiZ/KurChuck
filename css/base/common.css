@@ -22,6 +22,11 @@ ol {
   padding-left: 0;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-weight: 400;
   font-family: "oktaneue-blackitalic", sans-serif;
@@ -34,7 +39,7 @@ body {
 }
 
 .header-hero-bg {
-  width: 1440px;
+  width: 100%;
   height: 790px;
   position: absolute;
   z-index: -2;

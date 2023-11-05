@@ -1,6 +1,5 @@
 .container {
-  margin: 0 auto;
-  width: 1110px;
+  padding: 0;
 }
 
 .hero-container {
@@ -39,8 +38,9 @@
 }
 
 @media screen and (min-width: 320px) {
-  .container {
-  }
+ .container {
+  margin: 0 auto;
+  width: 1110px;
 }
 
 @media (max-width: 767px) {

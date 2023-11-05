@@ -36,7 +36,7 @@
 }
 
 .nav-menu-list-item {
-  width: calc((100% -80px) 3);
+  width: calc((100% -80px) / 3);
 }
 
 .sm-list {
