@@ -7,13 +7,13 @@
 
 .section-title {
   /* Box model */
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 
   /* Typography */
   color: #d9d9d9;
-  font-size: 30px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.2;
   letter-spacing: 0.2em;
   text-align: center;
 
@@ -24,14 +24,14 @@
 .bg-title {
   /* Box model */
   position: absolute;
-  top: 60px;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
 
   /* Typography */
   font-family: "Windsor", serif;
   color: #575757;
-  font-size: 100px;
+  font-size: 42px;
   font-weight: 900;
   line-height: 1.5;
   letter-spacing: 0.2em;
@@ -40,32 +40,93 @@
 
 .section-text {
   /* Box model */
-  width: 734px;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
   /* Typography */
   color: #a6a6a6;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.9;
 }
 
+.gallery-toggle {
+  /* Box model */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+
+  /* Visual */
+  background-color: transparent;
+  border: 2px solid #a6a6a6;
+  border-radius: 50%;
+
+  /* Transform */
+  transition: transform 0.2s, box-shadow 0.5s ease-in-out;
+}
+
+.gallery-toggle:active {
+  transform: scale(1.5);
+}
+
+.gallery-narrow {
+  fill: #a6a6a6;
+}
 .about-gallery-wrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 20px;
-  height: 350px;
-  padding: 15px;
+  padding: 0 28px;
 }
 .about-video,
 .about-img {
   border-radius: 6px;
-  transition: transform 0.2s, box-shadow 0.5s ease-in-out;
+  height: 100%;
 }
 
-.about-video:hover,
-.about-video:focus,
-.about-img:hover,
-.about-img:focus {
-  transform: scale(1.05);
-  box-shadow: 0 0 5px #a6a6a6;
+@media screen and (min-width: 320px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+  .bg-title {
+    font-size: 76px;
+    position: absolute;
+    top: 76px;
+  }
+
+  .section-title {
+    margin-bottom: 44px;
+    font-size: 24px;
+    line-height: 2;
+  }
+
+  .section-text {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .bg-title {
+    top: 60px;
+    font-size: 100px;
+  }
+  .section-title {
+    margin-bottom: 60px;
+    font-size: 30px;
+  }
+  .section-text {
+    margin-bottom: 60px;
+    width: 734px;
+    font-size: 16px;
+  }
+
+  .gallery-toggle:hover,
+  .gallery-toggle:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #a6a6a6;
+  }
 }

@@ -1,7 +1,7 @@
 .container-content-wrapper {
   display: flex;
   gap: 12px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -25,8 +25,7 @@
 
 .events-list-item {
   /* Box model */
-  width: 600px;
-  height: 150px;
+  width: 350px;
   padding: 30px;
   margin-bottom: 28px;
 
@@ -52,50 +51,72 @@
   font-size: 12px;
 }
 
-.maps-link:hover,
-.maps-link:focus {
-  color: #f1b043;
-}
-
-/* ##### MAP PART ##### */
 .map-wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  gap: 30px;
+  display: none;
 }
 
-.map-text {
-  /* Typography */
-  color: #a6a6a6;
+@media screen and (min-width: 320px) {
 }
 
-.map-container {
-  position: relative;
+@media (max-width: 767px) {
 }
 
-.map-location-link {
-  position: absolute;
-  top: 115px;
-  left: 75px;
-
-  /* Visual */
-  fill: #000;
-  animation: bounce 0.5s alternate infinite;
-}
-
-.location-pin-icon:hover,
-.location-pin-icon:focus {
-  fill: #f1b043;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
+@media screen and (min-width: 768px) {
+  .events-list-item {
+    width: 600px;
+    height: 150px;
   }
-  100% {
-    transform: translateY(-20px);
+}
+
+@media screen and (min-width: 1158px) {
+  .container-content-wrapper {
+    justify-content: space-between;
+  }
+  .maps-link:hover,
+  .maps-link:focus {
+    color: #f1b043;
+  }
+
+  /* ##### MAP PART ##### */
+  .map-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    gap: 30px;
+  }
+
+  .map-text {
+    /* Typography */
+    color: #a6a6a6;
+  }
+
+  .map-container {
+    position: relative;
+  }
+
+  .map-location-link {
+    position: absolute;
+    top: 115px;
+    left: 75px;
+
+    /* Visual */
+    fill: #000;
+    animation: bounce 0.5s alternate infinite;
+  }
+
+  .location-pin-icon:hover,
+  .location-pin-icon:focus {
+    fill: #f1b043;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
   }
 }

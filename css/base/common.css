@@ -1,3 +1,5 @@
+/* !!!!!!!!!!!! передивитись усі значення - багато зі старих проектів  */
+
 :root {
   --primary-text-color: #f3f3f3;
   --background-color: #100f0f;
@@ -38,23 +40,6 @@ body {
   background-color: #1c1c1c;
 }
 
-.header-hero-bg {
-  width: 100%;
-  height: 790px;
-  position: absolute;
-  z-index: -2;
-  background-image: linear-gradient(
-      180deg,
-      rgba(26, 26, 26, 0) 0%,
-      #1a1a1a 100%
-    ),
-    linear-gradient(0deg, rgba(33, 33, 33, 0.5) 0%, rgba(33, 33, 33, 0.5) 100%),
-    url(/images/boxes/hero-box-img.jpg);
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -83,21 +68,6 @@ textarea {
 }
 
 /* HEADER */
-
-.logo-header {
-  color: whitesmoke;
-  font-family: "Windsor", serif;
-  font-size: 24px;
-  line-height: 1.17;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  /* Box model */
-  margin-right: 76px;
-}
-
-.logo-icon {
-  fill: white;
-}
 
 /* MAIN */
 .btn {
