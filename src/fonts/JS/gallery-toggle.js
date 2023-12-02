@@ -7,6 +7,7 @@ const prevBtn = document.querySelector(".prev-img");
 const nextBtn = document.querySelector(".next-img");
 
 let currentIdx = 0;
+images[currentIdx].classList.add("active");
 const imageCount = images.length;
 
 const showImg = (index) => {
