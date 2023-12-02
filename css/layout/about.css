@@ -51,6 +51,7 @@
 
 .gallery-toggle {
   padding: 15px;
+  flex-shrink: 0;
   /* Visual */
   background-color: transparent;
   border: none;
