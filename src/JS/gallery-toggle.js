@@ -7,8 +7,6 @@ const prevBtn = document.querySelector(".prev-img");
 const nextBtn = document.querySelector(".next-img");
 
 let currentIdx = 0;
-images[currentIdx].classList.add("active");
-images[currentIdx].style.display = "block";
 
 const imageCount = images.length;
 
