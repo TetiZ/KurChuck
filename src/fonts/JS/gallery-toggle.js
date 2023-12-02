@@ -11,7 +11,7 @@ const imageCount = images.length;
 
 const showImg = (index) => {
   images.forEach((img, idx) => {
-    img.classList.toggle("active", idx === index); // Показываем только активное изображение
+    img.classList.toggle("active", idx === index);
   });
 };
 
