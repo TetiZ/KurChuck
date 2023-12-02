@@ -148,7 +148,7 @@
           </div>
 
           <div class="about-gallery-wrapper">
-            <button class="gallery-toggle" type="button">
+            <button class="gallery-toggle prev-img" type="button">
               <svg
                 class="gallery-narrow"
                 width="28"
@@ -158,20 +158,23 @@
                 <use href="./images/icons.svg#icon-arrow-left" />
               </svg>
             </button>
-            <!-- <img
-              class="about-img"
-              src="./images/warsaw-truck.jpg"
-              alt="foodtruck photo at Warsow fantasy fair"
-            /> -->
-            <!-- <video class="about-video" controls>
-              <source src="./videos/about.mp4" type="video/mp4" />
-            </video> -->
-            <img
-              class="about-img"
-              src="./images/lwowek-truck.jpg"
-              alt="foodtruck team photo"
-            />
-            <button class="gallery-toggle" type="button">
+
+            <!-- Gallery start-->
+            <div class="about-gallery">
+              <img
+                class="about-img"
+                src="./images/warsaw-truck.jpg"
+                alt="foodtruck photo at Warsaw fantasy fair"
+              />
+              <img
+                class="about-img"
+                src="./images/lwowek-truck.jpg"
+                alt="foodtruck team photo"
+              />
+            </div>
+            <!-- Gallery end -->
+
+            <button class="gallery-toggle next-img" type="button">
               <svg
                 class="gallery-narrow"
                 width="28"
@@ -544,5 +547,7 @@
         </ul>
       </div>
     </div> -->
+
+    <script src="/src/fonts/JS/gallery-toggle.js" defer></script>
   </body>
 </html>
