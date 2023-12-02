@@ -6,12 +6,6 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.logo-footer-container {
-}
-
-.sm-footer-container {
-}
-
 .sm-list-footer {
   /* Box model */
   display: flex;
@@ -22,10 +16,6 @@
   /* Visual */
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-}
-
-.contact-footer-container {
-  /* width: 200px; */
 }
 
 .footer-text {
@@ -77,6 +67,11 @@
 
   .footer-text {
     text-align: center;
+  }
+
+  .sm-footer-icon {
+    stroke: whitesmoke;
+    fill: none;
   }
 }
 

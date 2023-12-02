@@ -41,15 +41,6 @@
   .sm-list {
     display: none;
   }
-
-  .sm-list-footer {
-    display: flex;
-    gap: 10px;
-  }
-
-  .sm-footer-icon {
-    fill: whitesmoke;
-  }
 }
 
 @media screen and (min-width: 320px) {
