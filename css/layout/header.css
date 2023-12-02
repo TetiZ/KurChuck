@@ -37,15 +37,8 @@
 }
 
 @media screen and (max-width: 767px) {
-  .nav-menu-list,
   .sm-list {
     display: none;
-  }
-
-  .navbar {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
   }
 
   .header-menu-btn {
@@ -68,6 +61,11 @@
 }
 
 @media screen and (min-width: 320px) {
+  .navbar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -93,6 +91,12 @@
     padding-top: 28px;
     padding-bottom: 28px;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 1158px) {
+  .nav-menu-list {
+    display: none;
   }
 }
 

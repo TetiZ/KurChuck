@@ -50,23 +50,17 @@
 }
 
 .gallery-toggle {
-  /* Box model */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 28px;
-
+  padding: 15px;
   /* Visual */
   background-color: transparent;
-  border: 2px solid #a6a6a6;
-  border-radius: 50%;
+  border: none;
 
   /* Transform */
   transition: transform 0.2s, box-shadow 0.5s ease-in-out;
 }
 
 .gallery-toggle:active {
-  transform: scale(1.5);
+  transform: scale(0.7);
 }
 
 .gallery-narrow {
