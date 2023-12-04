@@ -17,6 +17,10 @@
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
 }
+.sm-footer-icon {
+  stroke: whitesmoke;
+  fill: none;
+}
 
 .footer-text {
   margin-bottom: 16px;
@@ -67,11 +71,6 @@
 
   .footer-text {
     text-align: center;
-  }
-
-  .sm-footer-icon {
-    stroke: whitesmoke;
-    fill: none;
   }
 }
 

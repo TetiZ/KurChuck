@@ -28,5 +28,6 @@
 @media screen and (min-width: 768px) {
   .location-section {
     padding-top: 0;
+    padding-bottom: 20px;
   }
 }
