@@ -67,6 +67,15 @@ textarea {
   text-decoration: none;
 }
 
+.btn-scroll-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+}
+
 /* HEADER */
 
 /* MAIN */
