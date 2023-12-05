@@ -7,12 +7,6 @@
 
 /* ##### EVENT LIST PART ##### */
 
-.events-list-wrapper {
-}
-
-.events-list {
-}
-
 .list-custom-marker {
   display: inline-block;
   margin-right: 10px;
@@ -20,7 +14,7 @@
 }
 
 .custom-marker-icon {
-  fill: #f1b043;
+  fill: var(--accent-color);
 }
 
 .events-list-item {
@@ -29,7 +23,7 @@
   padding: 30px;
 
   /* Visual */
-  background-color: #252525;
+  background-color: var(--accent-background-color);
   border-radius: 6px;
 }
 
@@ -50,12 +44,12 @@
 }
 
 .events-list-item:nth-child(2n) * {
-  color: #f3f3f3;
+  color: var(--primary-text-color);
 }
 
 .events-list-item:hover,
 .events-list-item:focus {
-  background-color: #f1b043;
+  background-color: var(--accent-color);
   background-image: linear-gradient(
     0deg,
     rgba(241, 176, 67, 0.5) 100%,
@@ -65,8 +59,8 @@
 
 .events-list-item:hover *,
 .events-list-item:focus * {
-  color: #252525;
-  fill: #252525;
+  color: var(--accent-background-color);
+  fill: var(--accent-background-color);
 }
 
 .location-town {
@@ -76,24 +70,18 @@
 }
 
 .location-descr {
-  color: #b3b3b3;
+  color: var(--secondary-text-color);
   font-weight: 600;
 }
 
 .maps-link {
   padding: 15px 0;
-  color: #85878c;
+  color: var(--additional-text-color);
   font-size: 12px;
 }
 
-.map-wrapper {
+.event-img-wrapper {
   display: none;
-}
-
-@media screen and (min-width: 320px) {
-}
-
-@media (max-width: 767px) {
 }
 
 @media screen and (min-width: 768px) {
@@ -107,12 +95,18 @@
   .container-content-wrapper {
     justify-content: space-between;
   }
-  .maps-link:hover,
-  .maps-link:focus {
-    color: #f1b043;
+
+  .maps-link {
+    text-decoration: none;
   }
 
-  /* ##### MAP PART ##### */
+  .maps-link:hover,
+  .maps-link:focus {
+    text-decoration: underline;
+    color: var(--accent-black);
+  }
+
+  /* ##### IMG PART ##### */
   .event-img {
     border-radius: 6px;
     fill: linear-gradient(
@@ -122,7 +116,7 @@
     );
   }
 
-  .map-wrapper {
+  .event-img-wrapper {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -130,38 +124,5 @@
     justify-content: center;
     flex: 1;
     gap: 30px;
-  }
-
-  .map-text {
-    /* Typography */
-    color: #a6a6a6;
-  }
-
-  .map-container {
-    position: relative;
-  }
-
-  .map-location-link {
-    position: absolute;
-    top: 115px;
-    left: 75px;
-
-    /* Visual */
-    fill: #000;
-    animation: bounce 0.5s alternate infinite;
-  }
-
-  .location-pin-icon:hover,
-  .location-pin-icon:focus {
-    fill: #f1b043;
-  }
-
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-20px);
-    }
   }
 }

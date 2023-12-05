@@ -10,7 +10,7 @@
   margin-bottom: 40px;
 
   /* Typography */
-  color: #d9d9d9;
+  color: var(--main-text-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
@@ -30,7 +30,7 @@
 
   /* Typography */
   font-family: "Windsor", serif;
-  color: #575757;
+  color: var(--bg-title-color);
   font-size: 42px;
   font-weight: 900;
   line-height: 1.5;
@@ -42,7 +42,7 @@
   /* Box model */
   margin-bottom: 32px;
   /* Typography */
-  color: #a6a6a6;
+  color: var(--main-text-color);
   text-align: center;
   font-size: 14px;
   font-weight: 400;
@@ -51,7 +51,7 @@
 
 .gallery-toggle {
   padding: 15px;
-  flex-shrink: 0;
+
   /* Visual */
   background-color: transparent;
   border: none;
@@ -65,7 +65,7 @@
 }
 
 .gallery-narrow {
-  fill: #575757;
+  fill: var(--secondary-text-color);
 }
 .about-gallery-wrapper {
   display: flex;
@@ -94,12 +94,6 @@
 
 .about-img.active {
   display: block;
-}
-
-@media screen and (min-width: 320px) {
-}
-
-@media (max-width: 767px) {
 }
 
 @media screen and (min-width: 768px) {

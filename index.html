@@ -91,7 +91,7 @@
             </a>
           </li>
         </ul>
-        <button class="header-menu-btn" type="button">
+        <button class="header-menu-btn" type="button" data-modal-open>
           <svg class="header-menu-icon" width="32" height="32">
             <use href="./images/icons.svg#icon-menu" />
           </svg>
@@ -99,7 +99,7 @@
       </div>
     </header>
 
-    <!-- Основний вміст сторінки -->
+    <!-- MAIN -->
     <main>
       <!-- HERO SECTION -->
 
@@ -363,36 +363,14 @@
               </ul>
             </div>
 
-            <div class="map-wrapper">
+            <div class="event-img-wrapper">
               <img
                 class="event-img"
-                src="./images/boxes/"
+                src="./images/boxes/czempin.jpg"
                 width="540"
                 heigth="510"
                 alt="photo of foodtruck event"
               />
-              <!-- <p class="map-text">Kliknij i zobacz gdzie jesteśmy:</p>
-              <span class="map-container">
-                <img
-                  src="./images/poland-map.png"
-                  width="400"
-                  alt="Poland colorful map"
-                />
-                <a
-                  class="map-location-link"
-                  href="https://shorturl.at/dpJZ6"
-                  target="_blank"
-                >
-                  <svg
-                    class="location-pin-icon"
-                    width="40"
-                    height="40"
-                    aria-label="location pin icon"
-                  >
-                    <use href="./images/icons.svg#icon-location-pin"></use>
-                  </svg>
-                </a>
-              </span> -->
             </div>
           </div>
         </div>
@@ -485,85 +463,112 @@
       <p class="footer-copywrite">&copy; 2024 KurChuck. All rights reserved.</p>
     </footer>
 
-    <!-- ##### Modal window - mobile menu #####
-    <div class="mobile-menu">
-      <button class="modal-close-btn" type="button">
-        <svg class="icon-close" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <nav class="mobile-menu-nav">
-        <ul class="mobile-menu-list list">
-          <li class="mobile-menu-list-item">
-            <a href="" class="section-title link active-mob-menu-link"
-              >studio</a
-            >
-          </li>
-          <li class="mobile-menu-list-item">
-            <a href="" class="section-title link">portfolio</a>
-          </li>
-          <li class="mobile-menu-list-item">
-            <a href="" class="section-title link">contacts</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="menu-mob-contacts">
-        <address class="address-links">
-          <ul class="list address-mob-list">
-            <li class="address-mob-list-item">
-              <a
-                class="contact-links-mob link active-mob-menu-link"
-                href="tel:+110001111111"
-                >+11 (000) 111-11-11
-              </a>
-            </li>
-            <li class="address-mob-list-item">
-              <a class="contact-links-mob link" href="mailto:info@devstudio.com"
-                >info@devstudio.com
-              </a>
-            </li>
-          </ul>
-        </address>
-
-        <ul class="sm-list list">
-          <li class="sm-list-item">
-            <a href="" class="sm-team-link sm-link link">
-              <svg class="sm-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="sm-list-item">
-            <a href="" class="sm-team-link sm-link link">
-              <svg class="sm-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="sm-list-item">
-            <a href="" class="sm-team-link sm-link link">
-              <svg class="sm-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="sm-list-item">
-            <a href="" class="sm-team-link sm-link link">
-              <svg class="sm-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div> -->
-
+    <!-- SCROLL -->
     <a class="btn-scroll-top" href="./index.html#header">
       <svg class="gallery-narrow" width="28" height="28">
         <use href="./images/icons.svg#icon-arrow-top" />
       </svg>
     </a>
+
+    <!-- ##### Modal window - mobile menu ##### -->
+    <div class="mobile-menu" data-modal>
+        <button class="close-btn" data-modal-close>
+          <svg class="close-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+       <nav class="footer-nav">
+          <ul class="mobile-menu-list list">
+            <li class="mobile-menu-list-item">
+              <a class="footer-nav-link link" href="./index.html#about">O nas</a>
+            </li>
+            <li class="mobile-menu-list-item">
+               <a class="footer-nav-link link" href="./index.html#menu">Menu</a>
+              </li>
+            </li>
+            <li class="mobile-menu-list-item"> <a class="footer-nav-link link" href="./index.html#location"
+                  >Znajdź nas</a
+                ></li>
+          </ul>
+       </nav>
+
+<div class="mobile-menu-contact-wrapper">
+  <div class="sm-footer-container">
+              <ul class="sm-list-footer list">
+                <li class="sm-list-item">
+                  <a
+                    class="sm-link"
+                    href="https://www.tiktok.com/@kur.chuck"
+                    target="_blank"
+                  >
+                    <svg
+                      class="sm-footer-icon"
+                      width="28"
+                      height="28"
+                      aria-label="tiktok icon"
+                    >
+                      <use href="./images/icons.svg#icon-tiktok" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="sm-list-item">
+                  <a
+                    class="sm-link"
+                    href="https://www.facebook.com/kurchuck.foodtruck"
+                    target="_blank"
+                  >
+                    <svg
+                      class="sm-footer-icon"
+                      width="28"
+                      height="28"
+                      aria-label="facebook icon"
+                    >
+                      <use href="./images/icons.svg#icon-facebook" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="sm-list-item">
+                  <a
+                    class="sm-link"
+                    href="https://www.instagram.com/kur.chuck/"
+                    target="_blank"
+                  >
+                    <svg
+                      class="sm-footer-icon"
+                      width="28"
+                      height="28"
+                      aria-label="instagram icon"
+                    >
+                      <use href="./images/icons.svg#icon-instagram" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+  
+            <div class="contact-footer-container">
+              <address class="footer-address">
+                <a class="footer-email-link link" href="mailto:kurczak@gmail.com">
+                  <svg
+                    class="footer-email-icon"
+                    width="28"
+                    height="28"
+                    aria-label="email-icon"
+                  >
+                    <use href="./images/icons.svg#icon-mail"></use></svg
+                  >kurczak@gmail.com</a
+                >
+              </address>
+            </div>
+          </div>
+  
+        </div>
+      
+
+
+
     <script src="src/JS/gallery-toggle.js" defer></script>
+    <script src="src/JS/mobile-menu.js" defer></script>
   </body>
 </html>

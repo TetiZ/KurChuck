@@ -1,5 +1,5 @@
 .footer {
-  background-color: #252525;
+  background-color: var(--accent-background-color);
 }
 
 .footer-section {
@@ -18,20 +18,18 @@
   border-radius: 8px;
 }
 .sm-footer-icon {
-  stroke: whitesmoke;
+  stroke: var(--primary-text-color);
   fill: none;
 }
 
 .footer-text {
   margin-bottom: 16px;
-  /* color: #a6a6a6; */
-  font-size: 16px;
-  font-weight: 400;
+  color: var(--secondary-text-color);
   line-height: 1.9;
 }
 
 .footer-email-icon {
-  fill: #f1b043;
+  fill: var(--accent-color);
 }
 
 .footer-email-link {
@@ -43,7 +41,7 @@
   padding: 8px;
 
   /* Typography */
-  color: whitesmoke;
+  color: var(--primary-text-color);
   font-weight: 600;
   font-style: normal;
 
@@ -55,12 +53,9 @@
 .footer-copywrite {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #85878c;
+  color: var(--additional-text-color);
   font-size: 12px;
   text-align: center;
-}
-
-@media screen and (min-width: 320px) {
 }
 
 @media screen and (max-width: 767px) {
@@ -72,9 +67,10 @@
   .footer-text {
     text-align: center;
   }
-}
 
-@media screen and (min-width: 768px) {
+  .btn-scroll-top {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1158px) {
@@ -86,6 +82,6 @@
 @media screen and (min-width: 1158px) {
   .footer-email-link:hover,
   .footer-email-link:focus {
-    color: #f1b043;
+    color: var(--accent-color);
   }
 }

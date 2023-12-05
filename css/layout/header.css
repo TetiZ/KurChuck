@@ -17,7 +17,14 @@
 }
 
 .logo-header {
-  color: whitesmoke;
+  /* Box model */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 17px 0;
+
+  /* Typography */
+  color: var(--primary-text-color);
   font-family: "Windsor", serif;
   font-size: 24px;
   line-height: 1.17;
@@ -29,11 +36,10 @@
   fill: white;
 }
 
-.logo-header {
+.navbar {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 17px 0;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
@@ -56,15 +62,7 @@
     cursor: pointer;
   }
   .header-menu-icon {
-    fill: whitesmoke;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .navbar {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    fill: var(--primary-text-color);
   }
 }
 
@@ -83,7 +81,7 @@
   }
 
   .sm-icon {
-    stroke: whitesmoke;
+    stroke: var(--primary-text-color);
     fill: none;
   }
   .nav-menu {
@@ -102,7 +100,7 @@
 
 @media screen and (min-width: 1158px) {
   .navigation {
-    color: whitesmoke;
+    color: var(--primary-text-color);
     font-weight: 600;
   }
 
