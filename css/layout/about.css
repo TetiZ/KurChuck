@@ -50,7 +50,7 @@
 }
 
 .gallery-toggle {
-  padding: 15px;
+  padding: 10px;
 
   /* Visual */
   background-color: transparent;
@@ -78,8 +78,8 @@
 .about-gallery {
   display: flex;
   justify-content: center;
-  width: 200px;
-  height: 170px;
+  width: 300px;
+  height: 240px;
   transition: transform 0.3s ease-in;
   overflow: hidden;
 }
@@ -94,6 +94,13 @@
 
 .about-img.active {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .container-title-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {

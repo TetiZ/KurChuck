@@ -39,7 +39,9 @@
     margin-top: -80px;
   }
 
-  .about-container,
+  .about-container {
+    padding: 52px 15px 24px;
+  }
   .menu-container,
   .location-container {
     padding: 52px 35px 24px;
