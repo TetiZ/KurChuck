@@ -3,9 +3,6 @@
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   margin: 0 auto;
   padding: 0 15px;
-  /* position: sticky; */
-  top: 0;
-  z-index: 99999;
 }
 
 .hero-section {
@@ -15,9 +12,11 @@
   align-items: center;
 }
 
-@media screen and (min-width: 1158px) {
-  .section {
-    padding-top: 105px;
+@media screen and (max-width: 768px) {
+  .page-header {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
   }
 }
 
@@ -25,5 +24,11 @@
   .location-section {
     padding-top: 0;
     padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section {
+    padding-top: 105px;
   }
 }
